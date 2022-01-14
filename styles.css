@@ -39,7 +39,7 @@ body {
     background-image: url(images/pic_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-position: center top;
     height: 100vh;
   }
 
@@ -48,7 +48,10 @@ body {
       max-width: 30em;
   }
 
-
+  .btn {
+      background-color: var(--color-light-purple);
+      border-radius: 18px;
+  }
 
   
 
@@ -58,19 +61,24 @@ body {
    
   @media only screen and (max-width: 480px){
 
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    .logo { /* to move the logo to the center */
+        margin-left: 30%;
+    }
+    
+  .navbar-toggler { /* move the hamburguer up*/
+      margin-top: -10%;
   }
-  .header-title {
+  .header-title { 
       font-size: 3rem;
   }
-  .row {
+  .row { /* to mantain the 3 words in 1 line and move up */
     margin-top: -4%;
-    max-width: 90em;
+    max-width: 18em;
 }
   .header-p {
-        font-size: 1rem;
+        font-size: 0.8rem;
   }
+  .hero-image {
+    background-position: 50% ; /*how big the background photo will be*/
+}
 }
